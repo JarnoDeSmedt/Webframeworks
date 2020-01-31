@@ -1,0 +1,14 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <input placeholder="Naam" type="text" formControlName="naam" />
+  <input
+    placeholder="geboortedatum"
+    type="date"
+    formControlName="geboortedatum"
+  />
+  <input
+    placeholder="studierichting"
+    type="text"
+    formControlName="studierichting"
+  />
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
