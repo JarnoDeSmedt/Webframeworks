@@ -1,0 +1,9 @@
+VRAAG 1 (3 punten)
+
+Leg uit waarom we nooit de node_modules directory op github inchecken.
+
+De node modules folder is waar alle externe libraries die gebruikt worden voor de applicatie worden opgeslagen. 
+Dit zijn heel veel bestanden en neemt veel tijd in beslag als je deze steeds gaat uploaden en downloaden.
+
+De lijst van de gebruikte libraries staat vermeld in de package.json file.
+Dus zo kan je de node modules terug installeren via npm install na het downloaden van de applicatie zonder de node modules.
